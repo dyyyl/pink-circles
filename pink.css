@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+}
+
+.top-left {
+  grid-area: top-left;
+}
+
+.top-right {
+  grid-area: top-right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-left {
+  grid-area: bottom-left;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+}
+
+.circle {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 500px;
+  background-color: palevioletred;
+}
