@@ -39,10 +39,59 @@ main {
   width: 5rem;
   border-radius: 500px;
   background-color: palevioletred;
+  /* transform: translate(-9px, -15px); */
+}
+
+.circle:hover {
+  height: 10rem;
+  width: 10rem;
+  animation: shake 0.1s infinite alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-12px, -18px);
+  }
+  33% {
+    transform: translate(-14px, -18px);
+  }
+  66% {
+    transform: translate(-14px, -20px);
+  }
+  100% {
+    transform: translate(-12px, -20px);
+  }
 }
 
 .box {
   height: 5rem;
   width: 5rem;
   background-color: blue;
+}
+
+.box:hover {
+  animation: swing 1s ease;
+  height: 10rem;
+  width: 10rem;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  65% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
